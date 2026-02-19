@@ -1,0 +1,106 @@
+:root {
+  --main-font: Poppins;
+  --h-weight: 500;
+  --p-weight: 400;
+  --bg-color: black;
+  --text-color: white;
+  --padding-mobile: 16px;
+  --h-lineheight-sm: 1.2;
+  --h-fontsize-sm: 26px;
+  --p-lineheight-sm: 1.6;
+  --p-fontsize-sm: 14px;
+  --heading-text-gap: 32px;
+  --button-g-p: 40px;
+  --button-text-weight-sm: 600;
+  --button-text-lineheight-sm: 1.5;
+  --button-fontsize-sm: 14px;
+  --button-bg-sm: black;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  position: relative;
+  height: 100%;
+  font-family: var(--main-font);
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+.service-section {
+  padding: var(--padding-mobile);
+}
+
+h2 {
+  font-size: var(--h-fontsize-sm);
+  line-height: var(--h-lineheight-sm);
+  font-weight: var(--h-weight);
+}
+
+p {
+  margin-top: var(--heading-text-gap);
+  font-size: var(--p-fontsize-sm);
+  line-height: var(--p-lineheight-sm);
+  font-weight: var(--p-weight);
+}
+
+.button-group {
+  margin-top: 40px;
+  display: flex;
+  gap: var(--button-g-p);
+  font-size: var(--button-fontsize-sm);
+  font-weight: var(--button-text-weight-sm);
+  line-height: var(--button-text-lineheight-sm);
+}
+
+.button-group button {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  padding-bottom: 4px;
+}
+
+.card {
+  position: relative;
+  width: 100%;
+  max-width: 343px;
+  border-radius: 12px;
+  overflow: hidden;
+  margin-top: 40px;
+}
+
+.card img {
+  width: 100%;
+  display: block;
+}
+
+.card-content {
+  position: absolute;
+  bottom: 20px; /* moves text to bottom */
+  left: 20px;
+  right: 20px;
+  color: white;
+}
+
+.card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1));
+}
+
+.arrow {
+  background: white;
+  color: black;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 10px;
+}/*# sourceMappingURL=style.css.map */
